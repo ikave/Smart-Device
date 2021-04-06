@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  min-width: 320px;
+  min-height: 100vh;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: "PT Mono", "Arial", sans-serif;
+}
