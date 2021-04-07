@@ -1,0 +1,25 @@
+.logo {
+  display: block;
+  color: inherit;
+  transition: opacity 0.2s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.logo__text {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

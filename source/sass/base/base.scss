@@ -23,5 +23,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   grid-template-rows: min-content 1fr min-content;
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: $main-font;
+  background-color: $main-bg;
 }
