@@ -1,0 +1,28 @@
+.accordion {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .accordion--opened .accordion__icon--plus {
+    display: none;
+  }
+
+  .accordion--closed .accordion__icon--minus {
+    display: none;
+  }
+}
+
+

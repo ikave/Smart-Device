@@ -1,0 +1,21 @@
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.main-navigation__list {
+  margin: 0;
+  margin-right: 74px;
+  padding: 0;
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+
+}
