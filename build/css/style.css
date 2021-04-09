@@ -352,8 +352,7 @@ body {
   min-height: 100vh;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
-  font-family: "PT Mono", monospace;
-  background-color: #1b2d37; }
+  font-family: "PT Mono", monospace; }
 
 .visually-hidden {
   position: absolute;
@@ -399,7 +398,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 1535px;
+  max-width: 1465px;
   width: 100%;
   margin: 0 auto;
   padding: 33px 25px;
@@ -513,6 +512,77 @@ body {
 @media (max-width: 1023px) {
   .header-contacts__text {
     display: none; } }
+
+.main-screen {
+  color: #ffffff;
+  background-color: #1b2d37;
+  background-image: url("../../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.hero {
+  background-image: url("../../img/boards.png"), url("../../img/hero-triangles.svg");
+  background-repeat: no-repeat;
+  background-position: 85.4% 57%,80.5% 71%;
+  background-size: 705px 515px, 613px 486px; }
+
+.hero__wrapper {
+  max-width: 1465px;
+  margin: 0 auto;
+  padding: 198px 25px 86px; }
+
+.hero h2 {
+  margin: 0;
+  margin-bottom: 26px;
+  font-family: "Roboto Condensed";
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase; }
+
+.hero p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 780px;
+  margin: 0;
+  margin-bottom: 44px;
+  font-size: 22px;
+  line-height: 34px; }
+  .hero p::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin-top: 17px;
+    margin-right: 28px;
+    background-color: #ffffff; }
+
+.hero__button-wrapper {
+  margin-left: 94px;
+  margin-bottom: 93px; }
+
+.hero__button {
+  display: inline-block;
+  padding: 17px 45px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  background-color: #00b2ff;
+  color: #ffffff; }
+
+.hero__scroll {
+  padding-right: 4px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.5; }
 
 .socials {
   display: -webkit-box;
@@ -769,7 +839,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1535px;
+  max-width: 1465px;
   width: 100%;
   margin: 0 auto;
   padding: 14px 25px; }
