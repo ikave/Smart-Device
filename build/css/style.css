@@ -660,6 +660,102 @@ body {
     .hero__scroll {
       display: none; } }
 
+.features {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 109px; }
+  @media (max-width: 1023px) {
+    .features {
+      padding-top: 54px; } }
+  @media (max-width: 767px) {
+    .features {
+      padding-top: 37px; } }
+
+.features ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  @media (max-width: 767px) {
+    .features ul {
+      grid-template-columns: 1fr;
+      row-gap: 20px; } }
+
+.features__item {
+  min-height: 299px;
+  padding: 40px 44px;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
+  cursor: pointer; }
+  .features__item::before {
+    content: "";
+    display: block;
+    height: 35px;
+    background-repeat: no-repeat;
+    margin-bottom: 23px; }
+  @media (max-width: 1023px) {
+    .features__item {
+      min-height: 232px;
+      padding: 24px 25px 20px; }
+      .features__item::before {
+        margin-bottom: 10px; } }
+
+.features__item:hover {
+  background-color: #00b2ff; }
+
+.features__item:hover h2,
+.features__item:hover p {
+  color: #ffffff; }
+
+.features__item--time::before {
+  background-image: url("../../img/icon-stopwatch.svg"); }
+
+.features__item--time:hover::before {
+  background-image: url("../../img/icon-stopwatch-hover.svg"); }
+
+.features__item--provider::before {
+  background-image: url("../../img/icon-hired.svg"); }
+
+.features__item--provider:hover::before {
+  background-image: url("../../img/icon-hired-hover.svg"); }
+
+.features__item--confidentiality::before {
+  background-image: url("../../img/icon-detective.svg"); }
+
+.features__item--confidentiality:hover::before {
+  background-image: url("../../img/icon-detective-hover.svg"); }
+
+.features__item--cost::before {
+  background-image: url("../../img/icon-tag.svg"); }
+
+.features__item--cost:hover::before {
+  background-image: url("../../img/icon-tag-hover.svg"); }
+
+.features {
+  color: #00b2ff; }
+
+.features h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #00b2ff; }
+
+.features p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666; }
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,0 +1,125 @@
+.features {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 109px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 37px;
+  }
+}
+
+.features ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+.features__item {
+  min-height: 299px;
+  padding: 40px 44px;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid $accent;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 35px;
+    background-repeat: no-repeat;
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $tablet-width) {
+    min-height: 232px;
+    padding: 24px 25px 20px;
+
+    &::before {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.features__item:hover {
+  background-color: $accent;
+}
+
+.features__item:hover h2,
+.features__item:hover p {
+  color: $white;
+}
+
+.features__item--time {
+  &::before {
+    background-image: url("../../img/icon-stopwatch.svg");
+  }
+
+  &:hover::before {
+    background-image: url("../../img/icon-stopwatch-hover.svg");
+  }
+}
+
+.features__item--provider {
+  &::before {
+    background-image: url("../../img/icon-hired.svg");
+  }
+
+  &:hover::before {
+    background-image: url("../../img/icon-hired-hover.svg");
+  }
+}
+
+.features__item--confidentiality {
+  &::before {
+    background-image: url("../../img/icon-detective.svg");
+  }
+
+  &:hover::before {
+    background-image: url("../../img/icon-detective-hover.svg");
+  }
+}
+
+.features__item--cost {
+  &::before {
+    background-image: url("../../img/icon-tag.svg");
+  }
+
+  &:hover::before {
+    background-image: url("../../img/icon-tag-hover.svg");
+  }
+}
+
+.features {
+  color: $accent;
+}
+
+.features h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: $accent;
+}
+
+.features p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text;
+}
