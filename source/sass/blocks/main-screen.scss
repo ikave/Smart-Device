@@ -1,8 +1,22 @@
 .main-screen {
   color: $white;
   background-color: $main-bg;
-  background-image: url("../../img/main-bg.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-image:
+  url("../../img/boards.png"),
+  url("../../img/triangle-dots.svg"),
+  url("../../img/triangle-dots-small.svg"),
+  url("../../img/main-bg.jpg");
+  background-position: 85.4% 258px, 82.5% 80%, 66% 80%, center top,;
+  background-size: 705px 515px, 613px 486px, 326px 288px, cover;
+
+  @media (max-width: $tablet-width) {
+    background-position: right -205px top 113px, right -170px top 82px, right 54px top 239px, center top;
+    background-size: 465px 340px, 442px 384px, 259px 227px, cover;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-position: right -7px top 92px, right -305px top 69px, right -100px top 210px, center top;
+    background-size: 301px 220px, 419px 363px, 259px 227px, cover;
+  }
 }

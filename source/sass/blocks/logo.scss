@@ -13,8 +13,15 @@
     opacity: 0.3;
   }
 
+  @media (max-width: $tablet-width) {
+    &--header {
+      margin-top: 3px;
+    }
+  }
+
   @media (max-width: $mobile-width) {
     &--header {
+      margin-top: 0;
       width: 38px;
       height: 38px;
     }
