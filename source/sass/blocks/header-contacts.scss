@@ -20,6 +20,11 @@
   @media (max-width: $tablet-width) {
     margin-right: 33px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 22px;
+    padding: 5px 0;
+  }
 }
 
 .header-contacts__link {
