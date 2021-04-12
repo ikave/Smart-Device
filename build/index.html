@@ -100,7 +100,7 @@
             <a href="#">
               <!-- 370px 620px -->
               <picture>
-                <img src="img/produce2.png" width="370" height="620" alt="Печатная плата">
+                <img src="img/produce.jpg" width="370" height="620" alt="Печатная плата">
               </picture>
               Производство <br> печатных плат
             </a>
@@ -124,6 +124,39 @@
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback__content">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form action="#" method="POST" id="feedback__form" name="feedback">
+            <div class="feedback__field feedback__field--name">
+              <label for="feedback-name" class="visually-hidden">Имя</label>
+              <input id="feedback-name" type="text" name="name" placeholder="Имя" required="">
+            </div>
+
+            <div class="feedback__field feedback__field--phone">
+              <label for="feedback-phone" class="visually-hidden">Телефон</label>
+              <input id="feedback-phone" type="tel" name="phone" placeholder="Телефон" required="">
+            </div>
+
+            <div class="feedback__field feedback__field--text">
+              <label for="feedback-text" class="visually-hidden">Ваш вопрос</label>
+              <textarea id="feedback-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
+            </div>
+
+            <button class="feedback__button button" type="submit">Задать вопрос</button>
+
+            <label class="feedback__field-checkbox">
+              <input class="visually-hidden" type="checkbox" name="agreement" required="" checked="">
+              <span class="feedback__checkbox-indicator"></span>
+              Я согласен на обработку персональных данных
+            </label>
+          </form>
+        </div>
       </div>
     </section>
 

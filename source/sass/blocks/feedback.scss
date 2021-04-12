@@ -1,0 +1,183 @@
+.feedback {
+  padding-top: 96px;
+  padding-left: 92px;
+  padding-right: 87px;
+  padding-bottom: 113px;
+  color: $white;
+  background-color: $accent;
+  background-image:
+    url("../../img/paper-airplane.png"),
+    url("../../img/triangle-dots.svg"),
+    url("../../img/triangle-dots-small.svg"),
+    url("../../img/triangles.svg");
+  background-repeat: no-repeat;
+  background-position: calc(40% - 214px) 41.9%, 18.2% 50.6%, 12.3% 76.6%, 100% 35px;
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+    padding-top: 83px;
+    padding-bottom: 103px;
+    padding-bottom: 114px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 33px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 42px;
+  }
+}
+
+.feedback__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.feedback__content {
+  width: 50%;
+  min-width: 240px;
+  padding-left: 15px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.feedback h2 {
+  margin: 0;
+  margin-bottom: 7px;
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.feedback p {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.feedback form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "name phone"
+    "textaria textaria"
+    "button agreement";
+  column-gap: 30px;
+  row-gap: 40px;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "phone"
+      "textaria"
+      "button"
+      "agreement";
+    row-gap: 30px;
+  }
+}
+
+.feedback__field {
+  &--name {
+    grid-area: name;
+  }
+
+  &--phone {
+    grid-area: phone;
+  }
+
+  &--text {
+    grid-area: textaria;
+  }
+}
+
+.feedback__field-checkbox {
+  display: flex;
+  grid-area: agreement;
+  padding-top: 8px;
+  padding-left: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.feedback__field-checkbox:hover .feedback__checkbox-indicator {
+  box-shadow: 3px 3px 3px rgba($black, 0.1);
+}
+
+.feedback input:not([type="checkbox"]),
+.feedback textarea {
+  width: 100%;
+  padding: 14px 17px;
+  border: none;
+  font: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  background-color: rgba($white, 0.1);
+
+  &::placeholder {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 3px 3px 10px 0 rgba($black, 0.1);
+  }
+}
+
+.feedback__checkbox-indicator {
+  display: block;
+  margin-right: 16px;
+  min-width: 16px;
+  height: 16px;
+  border: 1px solid $white;
+}
+
+.feedback input[type="checkbox"]:focus + .feedback__checkbox-indicator {
+  box-shadow: 3px 3px 10px 0 rgba($black, 0.1);
+}
+
+.feedback input[type="checkbox"]:checked + .feedback__checkbox-indicator {
+  background-image: url("../../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+
+.feedback textarea {
+  min-height: 154px;
+  resize: none;
+}
+
+.feedback__button {
+  grid-area: button;
+  color: $white;
+  border-color: $white;
+
+  &:hover,
+  &:focus {
+    border-color: $white;
+    opacity: 0.5;
+  }
+}
