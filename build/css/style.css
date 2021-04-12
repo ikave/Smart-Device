@@ -663,12 +663,19 @@ body {
       display: none; } }
 
 .background {
-  padding-bottom: 50px;
+  padding-bottom: 99px;
   background-image: url("../../img/background.svg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: 0 -29px; }
   @media (max-width: 1023px) {
     .background {
-      padding-top: 0; } }
+      padding-top: 0;
+      padding-bottom: 75px;
+      background-position: -348px -86px; } }
+  @media (max-width: 767px) {
+    .background {
+      padding-bottom: 65px;
+      background-position: -679px 476px; } }
 
 .features {
   padding: 112px 25px 0; }
@@ -873,6 +880,112 @@ body {
     display: inline; }
   .about__content-text span:last-of-type {
     display: none; } }
+
+.services {
+  padding: 93px 25px 127px;
+  color: #ffffff;
+  background-color: #1b2d37; }
+  @media (max-width: 1023px) {
+    .services {
+      padding-top: 50px;
+      padding-bottom: 80px; } }
+  @media (max-width: 767px) {
+    .services {
+      padding-bottom: 64px;
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.services__wrapper {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.services h2 {
+  margin: 0;
+  margin-bottom: 47px;
+  font-family: "Roboto Condensed";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px; }
+  @media (max-width: 1023px) {
+    .services h2 {
+      font-size: 32px;
+      line-height: 45px; } }
+  @media (max-width: 767px) {
+    .services h2 {
+      margin-bottom: 42px;
+      padding-left: 10px;
+      font-size: 28px;
+      line-height: 39px; } }
+
+.services ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  @media (max-width: 1023px) {
+    .services ul {
+      grid-template-columns: 1fr;
+      row-gap: 46px; } }
+  @media (max-width: 767px) {
+    .services ul {
+      row-gap: 30px; } }
+
+.services li {
+  width: 100%;
+  min-height: 620px; }
+  @media (max-width: 1023px) {
+    .services li {
+      min-height: 256px; } }
+
+.services a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 53px;
+  padding-left: 44px;
+  padding-right: 44px;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff; }
+  .services a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 63px;
+    background-color: #00b2ff;
+    background-image: url("../../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 30px center; }
+  @media (max-width: 1023px) {
+    .services a {
+      padding-top: 43px; } }
+  @media (max-width: 767px) {
+    .services a {
+      padding-top: 21px;
+      padding-left: 35px;
+      padding-right: 35px; } }
+
+.services a:hover img,
+.services a:focus img {
+  opacity: 0.1; }
+
+.services img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+  opacity: 0.2; }
 
 .socials {
   display: -webkit-box;

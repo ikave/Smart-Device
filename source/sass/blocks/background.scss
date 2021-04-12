@@ -1,9 +1,17 @@
 .background {
-  padding-bottom: 50px;
+  padding-bottom: 99px;
   background-image: url("../../img/background.svg");
   background-repeat: no-repeat;
+  background-position: 0 -29px;
 
   @media (max-width: $tablet-width) {
     padding-top: 0;
+    padding-bottom: 75px;
+    background-position: -348px -86px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 65px;
+    background-position: -679px 476px;
   }
 }
