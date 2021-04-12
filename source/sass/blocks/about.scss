@@ -1,0 +1,115 @@
+.about {
+  padding: 108px 25px 0 25px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 56px;
+  }
+
+  @media (max-width: $mobile-width) {
+
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.about__year {
+  text-align: right;
+  margin-left: -20px;
+  margin-right: 44px;
+  font-family: $secondary-font;
+  font-size: 156px;
+  font-weight: 700;
+  line-height: 1;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  background-image: url("../../img/board-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (max-width: $tablet-width) {
+    margin-left: -19px;
+    margin-right: 27px;
+    font-size: 178px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.about h2 {
+  margin: 0;
+  margin-bottom: 18px;
+  font-family: $secondary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  color: $text;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 45px
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 37px;
+  }
+}
+
+.about__content-text {
+  max-width: 980px;
+  margin-bottom: 38px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.about__content-text span {
+  &:first-of-type {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    &:first-of-type {
+      display: inline;
+    }
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+
+
+}

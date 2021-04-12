@@ -1,9 +1,5 @@
 .features {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 109px;
+  padding: 112px 25px 0;
 
   @media (max-width: $tablet-width) {
     padding-top: 54px;
@@ -11,6 +7,8 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 37px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -19,7 +17,8 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
   row-gap: 30px;
-  margin: 0;
+  max-width: 1170px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 
@@ -31,9 +30,10 @@
 
 .features__item {
   min-height: 299px;
-  padding: 40px 44px;
+  padding: 40px 40px 40px 44px;
   border: 1px solid #ebebeb;
   border-left: 3px solid $accent;
+  background-color: $white;
   cursor: pointer;
 
   &::before {
@@ -46,12 +46,19 @@
 
   @media (max-width: $tablet-width) {
     min-height: 232px;
-    padding: 24px 25px 20px;
+    padding: 24px 20px 20px 25px;
+    border-left-width: 2px;
 
     &::before {
       margin-bottom: 10px;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 10px;
+    padding-bottom: 25px;
+  }
+
 }
 
 .features__item:hover {
@@ -115,6 +122,16 @@
   font-weight: 400;
   line-height: 34px;
   color: $accent;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .features p {

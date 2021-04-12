@@ -1,0 +1,9 @@
+.background {
+  padding-bottom: 50px;
+  background-image: url("../../img/background.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+  }
+}
