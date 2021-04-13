@@ -1,6 +1,19 @@
 'use strict';
 
 (function(){
+  const anchors = document.querySelectorAll('a.scroll');
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', (evt) => {
+      evt.preventDefault()
+      const blockID = anchor.getAttribute('href');
+      document.querySelector(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  };
+
   const accordionButtons = document.querySelectorAll('.accordion');
 
   accordionButtons.forEach((button) => {
