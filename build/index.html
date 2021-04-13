@@ -135,20 +135,20 @@
         <div class="feedback__content">
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
-          <form action="#" method="POST" class="feedback-form" name="feedback">
+          <form action="#" method="POST" class="feedback-form" name="feedback-form">
             <div class="feedback-form__field feedback-form__field--name">
-              <label for="feedback-name" class="visually-hidden">Имя</label>
-              <input id="feedback-name" type="text" name="name" placeholder="Имя" required="">
+              <label for="feedback-form-name" class="visually-hidden">Имя</label>
+              <input id="feedback-form-name" type="text" name="name" placeholder="Имя" required="">
             </div>
 
             <div class="feedback-form__field feedback-form__field--phone">
-              <label for="feedback-phone" class="visually-hidden">Телефон</label>
-              <input id="feedback-phone" type="tel" name="phone" placeholder="Телефон" required="">
+              <label for="feedback-form-phone" class="visually-hidden">Телефон</label>
+              <input id="feedback-form-phone" type="tel" name="phone" placeholder="Телефон" required="">
             </div>
 
             <div class="feedback-form__field feedback-form__field--text">
-              <label for="feedback-text" class="visually-hidden">Ваш вопрос</label>
-              <textarea id="feedback-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
+              <label for="feedback-form-text" class="visually-hidden">Ваш вопрос</label>
+              <textarea id="feedback-form-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
             </div>
 
             <button class="feedback-form__button button" type="submit">Задать вопрос</button>
@@ -165,7 +165,7 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--nojs">
     <div class="page-footer__wrapper">
 
       <div class="page-footer__socials">
@@ -205,7 +205,7 @@
       <div class="page-footer__navigation">
         <section class="page-footer__block">
           <h2 class="page-footer__header">Разделы сайта</h2>
-          <button class="accordion accordion--closed" type="button" aria-label="Показать">
+          <button class="page-footer__toggle accordion accordion--closed" type="button" aria-label="Показать">
             <svg class="accordion__icon accordion__icon--plus" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite_auto.svg#icon-plus"></use>
             </svg>
@@ -244,7 +244,7 @@
 
         <section class="page-footer__block">
           <h2 class="page-footer__header">Наш офис</h2>
-          <button class="accordion accordion--opened" type="button" aria-label="Показать">
+          <button class="page-footer__toggle accordion accordion--opened" type="button" aria-label="Показать">
             <svg class="accordion__icon accordion__icon--plus" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite_auto.svg#icon-plus"></use>
             </svg>
@@ -284,20 +284,20 @@
     <div class="popup__wrapper">
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form action="#" method="POST" class="feedback-form" name="feedback">
+      <form action="#" method="POST" class="feedback-form" name="feedback-form">
         <div class="feedback-form__field feedback-form__field--name">
-          <label for="feedback-name" class="visually-hidden">Имя</label>
-          <input id="feedback-name" type="text" name="name" placeholder="Имя" required="">
+          <label for="feedback-popup-name" class="visually-hidden">Имя</label>
+          <input id="feedback-popup-name" type="text" name="name" placeholder="Имя" required="">
         </div>
 
         <div class="feedback-form__field feedback-form__field--phone">
-          <label for="feedback-phone" class="visually-hidden">Телефон</label>
-          <input id="feedback-phone" type="tel" name="phone" placeholder="Телефон" required="">
+          <label for="feedback-popup-phone" class="visually-hidden">Телефон</label>
+          <input id="feedback-popup-phone" type="tel" name="phone" placeholder="Телефон" required="">
         </div>
 
         <div class="feedback-form__field feedback-form__field--text">
-          <label for="feedback-text" class="visually-hidden">Ваш вопрос</label>
-          <textarea id="feedback-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
+          <label for="feedback-popup-text" class="visually-hidden">Ваш вопрос</label>
+          <textarea id="feedback-popup-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
         </div>
 
         <button class="feedback-form__button button" type="submit">Задать вопрос</button>
@@ -312,6 +312,7 @@
     </div>
   </section>
 
-  <script src="js/main.js"></script>
+  <script defer="" src="js/imask.js"></script>
+  <script defer="" src="js/main.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 
 (function(){
   const anchors = document.querySelectorAll('a.scroll');
+  const pageFooter = document.querySelector('.page-footer');
   const accordionButtons = document.querySelectorAll('.accordion');
   const popupButton = document.querySelector('.page-header__button');
   const popup = document.querySelector('.popup');
@@ -16,6 +17,8 @@
   let storageName = '';
   let storagePhone = '';
   let storageText = '';
+
+  pageFooter.classList.remove('page-footer--nojs');
 
   try {
     storageName = localStorage.getItem('name');
@@ -59,6 +62,7 @@
 
     popup.removeEventListener('click', onPopupClick);
     window.removeEventListener('keydown', onEscPress);
+    popupForm.removeEventListener('submit', setLocalStorageValues)
   };
 
   const onPopupClick = function (evt) {

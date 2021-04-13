@@ -2,6 +2,19 @@
   background-color: $white;
 }
 
+.page-footer--nojs .page-footer__panel {
+  @media (max-width: $mobile-width) {
+    display: block;
+    margin-top: 36px;
+  }
+}
+
+.page-footer--nojs .page-footer__toggle {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 .page-footer__wrapper {
   display: flex;
   align-items: flex-start;

@@ -18,12 +18,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 33px;
+    margin-right: 32px;
+    padding: 15px 0;
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 32px;
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }
 

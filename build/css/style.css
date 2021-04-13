@@ -490,11 +490,11 @@ body {
     margin-right: 0; }
   @media (max-width: 1023px) {
     .header-contacts__item {
-      margin-right: 33px; } }
-  @media (max-width: 767px) {
-    .header-contacts__item {
       margin-right: 32px;
       padding: 15px 0; } }
+  @media (max-width: 767px) {
+    .header-contacts__item {
+      padding: 5px 0; } }
 
 .header-contacts__link {
   display: -webkit-box;
@@ -1224,6 +1224,15 @@ body {
 
 .page-footer {
   background-color: #ffffff; }
+
+@media (max-width: 767px) {
+  .page-footer--nojs .page-footer__panel {
+    display: block;
+    margin-top: 36px; } }
+
+@media (max-width: 767px) {
+  .page-footer--nojs .page-footer__toggle {
+    display: none; } }
 
 .page-footer__wrapper {
   display: -webkit-box;
