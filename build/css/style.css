@@ -494,6 +494,7 @@ body {
       padding: 15px 0; } }
   @media (max-width: 767px) {
     .header-contacts__item {
+      margin-right: 22px;
       padding: 5px 0; } }
 
 .header-contacts__link {
@@ -553,7 +554,7 @@ body {
     .hero {
       padding-top: 96px;
       padding-left: 88px;
-      padding-bottom: 161px; } }
+      padding-bottom: 165px; } }
   @media (max-width: 767px) {
     .hero {
       padding-left: 16px;
@@ -654,6 +655,10 @@ body {
       .hero__button--hide {
         display: none; } }
 
+@media (max-width: 767px) {
+  .hero__button-hide {
+    display: none; } }
+
 .hero__scroll {
   padding-right: 4px;
   -webkit-transform: rotate(180deg);
@@ -743,7 +748,7 @@ body {
 .features__item:hover {
   background-color: #00b2ff; }
 
-.features__item:hover h2,
+.features__item:hover h3,
 .features__item:hover p {
   color: #ffffff; }
 
@@ -774,7 +779,7 @@ body {
 .features {
   color: #00b2ff; }
 
-.features h2 {
+.features h3 {
   margin: 0;
   margin-bottom: 15px;
   font-family: "Roboto Condensed";
@@ -783,10 +788,10 @@ body {
   line-height: 34px;
   color: #00b2ff; }
   @media (max-width: 1023px) {
-    .features h2 {
+    .features h3 {
       margin-bottom: 5px; } }
   @media (max-width: 767px) {
-    .features h2 {
+    .features h3 {
       margin-bottom: 10px;
       font-size: 20px;
       line-height: 28px; } }
@@ -945,10 +950,10 @@ body {
 
 .services li {
   width: 100%;
-  min-height: 620px; }
+  height: 620px; }
   @media (max-width: 1023px) {
     .services li {
-      min-height: 256px; } }
+      height: 256px; } }
 
 .services a {
   position: relative;
@@ -1002,7 +1007,7 @@ body {
   padding-top: 96px;
   padding-left: 92px;
   padding-right: 87px;
-  padding-bottom: 113px;
+  padding-bottom: 112px;
   color: #ffffff;
   background-color: #00b2ff;
   background-image: url("../../img/paper-airplane.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/triangles.svg");
@@ -1017,13 +1022,13 @@ body {
       background-image: none;
       padding-top: 83px;
       padding-bottom: 103px;
-      padding-bottom: 114px; } }
+      padding-bottom: 104px; } }
   @media (max-width: 767px) {
     .feedback {
       padding-top: 33px;
       padding-right: 15px;
       padding-left: 15px;
-      padding-bottom: 42px; } }
+      padding-bottom: 37px; } }
 
 .feedback__wrapper {
   display: -webkit-box;
@@ -1058,13 +1063,18 @@ body {
       margin-bottom: 15px; } }
   @media (max-width: 767px) {
     .feedback h2 {
-      margin-bottom: 11px; } }
+      margin-bottom: 11px;
+      font-size: 28px;
+      line-height: 39px; } }
 
 .feedback p {
   margin: 0;
   margin-bottom: 49px;
   font-size: 16px;
   line-height: 22px; }
+  @media (max-width: 1023px) {
+    .feedback p {
+      margin-bottom: 52px; } }
   @media (max-width: 767px) {
     .feedback p {
       margin-bottom: 24px; } }
@@ -1103,6 +1113,9 @@ body {
   font-size: 14px;
   line-height: 16px;
   cursor: pointer; }
+  @media (max-width: 1023px) {
+    .feedback-form__field-checkbox {
+      padding-left: 9px; } }
 
 .feedback-form__field-checkbox:hover .feedback__checkbox-indicator {
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
@@ -1158,6 +1171,12 @@ body {
 .feedback-form textarea {
   min-height: 154px;
   resize: none; }
+  @media (max-width: 1023px) {
+    .feedback-form textarea {
+      min-height: 164px; } }
+  @media (max-width: 767px) {
+    .feedback-form textarea {
+      min-height: 104px; } }
 
 .feedback-form__button {
   grid-area: button;
@@ -1248,12 +1267,13 @@ body {
           justify-content: space-between;
   max-width: 1465px;
   margin: 0 auto;
-  padding: 65px 25px 55px; }
+  padding: 65px 25px 59px; }
   @media (max-width: 1023px) {
     .page-footer__wrapper {
       padding: 0; } }
 
 .page-footer__socials {
+  max-width: 423px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
@@ -1268,6 +1288,7 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      max-width: none;
       width: 100%;
       padding: 19px 25px 26px;
       border-bottom: 1px solid rgba(98, 105, 98, 0.2); } }
@@ -1278,7 +1299,7 @@ body {
           -ms-flex-direction: column;
               flex-direction: column;
       padding-top: 46px;
-      padding-bottom: 54px; } }
+      padding-bottom: 45px; } }
 
 .page-footer__logo {
   margin-bottom: 53px; }
@@ -1301,6 +1322,8 @@ body {
   opacity: 0.5; }
   @media (max-width: 1023px) {
     .page-footer__years {
+      padding-top: 5px;
+      padding-left: 15px;
       display: block; } }
   @media (max-width: 767px) {
     .page-footer__years {
@@ -1308,7 +1331,7 @@ body {
 
 .page-footer__header {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   font-family: "Roboto Condensed";
   font-size: 15px;
   font-weight: 400;
@@ -1320,6 +1343,10 @@ body {
     .page-footer__header {
       margin-bottom: 0; } }
 
+@media (max-width: 1023px) {
+  .page-footer__block {
+    width: 345px; } }
+
 @media (max-width: 767px) {
   .page-footer__block {
     display: -webkit-box;
@@ -1327,7 +1354,8 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 28px 15px;
+    width: auto;
+    padding: 27px 15px;
     border-bottom: 1px solid rgba(98, 105, 98, 0.2); }
     .page-footer__block:last-child {
       border-bottom: none; } }
@@ -1344,7 +1372,7 @@ body {
           flex-grow: 1; }
   @media (max-width: 1023px) {
     .page-footer__navigation {
-      padding: 38px 25px 33px; } }
+      padding: 38px 25px 36px; } }
   @media (max-width: 767px) {
     .page-footer__navigation {
       display: block;
@@ -1441,6 +1469,9 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 14px 25px; }
+  @media (max-width: 1023px) {
+    .copyright__wrapper {
+      padding: 22px 25px; } }
   @media (max-width: 767px) {
     .copyright__wrapper {
       -webkit-box-orient: vertical;
@@ -1473,7 +1504,7 @@ body {
     margin-bottom: 21px; } }
 
 .copyright__reserved {
-  margin-right: 59px; }
+  margin-right: 74px; }
 
 .copyright__years {
   margin-right: 142px; }

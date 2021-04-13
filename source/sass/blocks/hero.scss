@@ -6,7 +6,7 @@
   @media (max-width: $tablet-width) {
     padding-top: 96px;
     padding-left: 88px;
-    padding-bottom: 161px;
+    padding-bottom: 165px;
   }
 
   @media (max-width: $mobile-width) {
@@ -83,8 +83,6 @@
   }
 }
 
-
-
 .hero__button-wrapper {
   padding-left: 94px;
   margin-bottom: 93px;
@@ -132,6 +130,12 @@
     &--hide {
       display: none;
     }
+  }
+}
+
+.hero__button-hide {
+  @media (max-width: $mobile-width) {
+     display: none;
   }
 }
 

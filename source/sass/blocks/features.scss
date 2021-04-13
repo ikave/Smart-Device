@@ -58,14 +58,13 @@
     padding-right: 10px;
     padding-bottom: 25px;
   }
-
 }
 
 .features__item:hover {
   background-color: $accent;
 }
 
-.features__item:hover h2,
+.features__item:hover h3,
 .features__item:hover p {
   color: $white;
 }
@@ -114,7 +113,7 @@
   color: $accent;
 }
 
-.features h2 {
+.features h3 {
   margin: 0;
   margin-bottom: 15px;
   font-family: $secondary-font;

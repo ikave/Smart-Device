@@ -43,6 +43,10 @@
   font-size: 14px;
   line-height: 16px;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 9px;
+  }
 }
 
 .feedback-form__field-checkbox:hover .feedback__checkbox-indicator {
@@ -91,6 +95,14 @@
 .feedback-form textarea {
   min-height: 154px;
   resize: none;
+
+  @media (max-width: $tablet-width) {
+    min-height: 164px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 104px;
+  }
 }
 
 .feedback-form__button {

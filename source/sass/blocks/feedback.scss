@@ -2,7 +2,7 @@
   padding-top: 96px;
   padding-left: 92px;
   padding-right: 87px;
-  padding-bottom: 113px;
+  padding-bottom: 112px;
   color: $white;
   background-color: $accent;
   background-image:
@@ -26,14 +26,14 @@
     background-image: none;
     padding-top: 83px;
     padding-bottom: 103px;
-    padding-bottom: 114px;
+    padding-bottom: 104px;
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 33px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 42px;
+    padding-bottom: 37px;
   }
 }
 
@@ -71,6 +71,8 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 11px;
+    font-size: 28px;
+    line-height: 39px;
   }
 }
 
@@ -79,6 +81,10 @@
   margin-bottom: 49px;
   font-size: 16px;
   line-height: 22px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 24px;
