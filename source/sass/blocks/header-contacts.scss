@@ -21,9 +21,9 @@
     margin-right: 33px;
   }
 
-  @media (max-width: $tablet-width) {
-    margin-right: 22px;
-    padding: 5px 0;
+  @media (max-width: $mobile-width) {
+    margin-right: 32px;
+    padding: 15px 0;
   }
 }
 

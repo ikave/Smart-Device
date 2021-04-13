@@ -103,4 +103,12 @@
     border-color: $white;
     opacity: 0.5;
   }
+
+  &:disabled {
+    border-color: $gray;
+    background-color: $gray;
+    opacity: 1;
+    opacity: 0.8;
+    cursor: initial;
+  }
 }

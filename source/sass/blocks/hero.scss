@@ -6,7 +6,7 @@
   @media (max-width: $tablet-width) {
     padding-top: 96px;
     padding-left: 88px;
-    padding-bottom: 165px;
+    padding-bottom: 161px;
   }
 
   @media (max-width: $mobile-width) {
@@ -109,6 +109,15 @@
   background-color: $accent;
   color: $white;
 
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     padding: 17px 31px;
   }
@@ -134,6 +143,15 @@
   line-height: 16px;
   color: $white;
   opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (max-width: $tablet-width) {
     display: none;
