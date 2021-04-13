@@ -1,0 +1,77 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($black, 0.5);
+
+  &--opened {
+    display: flex;
+  }
+}
+
+.popup__wrapper {
+  position: relative;
+  max-width: 490px;
+  padding: 33px 40px 36px;
+  color: $white;
+  background-color: $accent;
+}
+
+.popup__wrapper form {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "name"
+    "phone"
+    "textaria"
+    "button"
+    "agreement";
+  row-gap: 30px;
+}
+
+.popup h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 39px;
+}
+
+.popup p {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.popup textarea {
+  min-height: auto;
+  height: 104px;
+}
+
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

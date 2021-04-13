@@ -44,11 +44,11 @@
       <h2>Печатные платы</h2>
       <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
       <div class="hero__button-wrapper">
-        <a class="hero__button button" href="#">
+        <a class="hero__button button scroll" href="#feedback">
           <span class="hero__button--hide">Получить</span> бесплатную консультацию
         </a>
       </div>
-      <a class="hero__scroll" href="#">Скролл вниз</a>
+      <a class="hero__scroll scroll" href="#features">Скролл вниз</a>
 
     </section>
 
@@ -56,7 +56,7 @@
   <main>
 
     <div class="background">
-      <section class="features">
+      <section class="features" id="features">
         <ul>
           <li class="features__item features__item--time">
             <h2>Оперативные сроки</h2>
@@ -127,32 +127,32 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="feedback__wrapper">
         <div class="feedback__content">
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
-          <form action="#" method="POST" id="feedback__form" name="feedback">
-            <div class="feedback__field feedback__field--name">
+          <form action="#" method="POST" class="feedback-form" name="feedback">
+            <div class="feedback-form__field feedback-form__field--name">
               <label for="feedback-name" class="visually-hidden">Имя</label>
               <input id="feedback-name" type="text" name="name" placeholder="Имя" required>
             </div>
 
-            <div class="feedback__field feedback__field--phone">
+            <div class="feedback-form__field feedback-form__field--phone">
               <label for="feedback-phone" class="visually-hidden">Телефон</label>
               <input id="feedback-phone" type="tel" name="phone" placeholder="Телефон" required>
             </div>
 
-            <div class="feedback__field feedback__field--text">
+            <div class="feedback-form__field feedback-form__field--text">
               <label for="feedback-text" class="visually-hidden">Ваш вопрос</label>
               <textarea id="feedback-text" name="text" placeholder="Ваш вопрос" required></textarea>
             </div>
 
-            <button class="feedback__button button" type="submit">Задать вопрос</button>
+            <button class="feedback-form__button button" type="submit">Задать вопрос</button>
 
-            <label class="feedback__field-checkbox">
+            <label class="feedback-form__field-checkbox">
               <input class="visually-hidden" type="checkbox" name="agreement" required checked>
-              <span class="feedback__checkbox-indicator"></span>
+              <span class="feedback-form__checkbox-indicator"></span>
               Я согласен на обработку персональных данных
             </label>
           </form>
@@ -276,6 +276,39 @@
       </div>
     </div>
   </footer>
+
+  <section class="popup">
+    <div class="popup__wrapper">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form action="#" method="POST" class="feedback-form" name="feedback">
+        <div class="feedback-form__field feedback-form__field--name">
+          <label for="feedback-name" class="visually-hidden">Имя</label>
+          <input id="feedback-name" type="text" name="name" placeholder="Имя" required>
+        </div>
+
+        <div class="feedback-form__field feedback-form__field--phone">
+          <label for="feedback-phone" class="visually-hidden">Телефон</label>
+          <input id="feedback-phone" type="tel" name="phone" placeholder="Телефон" required>
+        </div>
+
+        <div class="feedback-form__field feedback-form__field--text">
+          <label for="feedback-text" class="visually-hidden">Ваш вопрос</label>
+          <textarea id="feedback-text" name="text" placeholder="Ваш вопрос" required></textarea>
+        </div>
+
+        <button class="feedback-form__button button" type="submit">Задать вопрос</button>
+
+        <label class="feedback-form__field-checkbox">
+          <input class="visually-hidden" type="checkbox" name="agreement" required checked>
+          <span class="feedback-form__checkbox-indicator"></span>
+          Я согласен на обработку персональных данных
+        </label>
+      </form>
+      <button class="popup__close" type="button" aria-label="Закрыть"></button>
+    </div>
+  </section>
+
   <script src="js/main.js"></script>
 </body>
 </html>

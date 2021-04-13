@@ -1054,7 +1054,7 @@ body {
     .feedback p {
       margin-bottom: 24px; } }
 
-.feedback form {
+.feedback-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "name phone" "textaria textaria" "button agreement";
@@ -1063,37 +1063,38 @@ body {
           column-gap: 30px;
   row-gap: 40px; }
   @media (max-width: 767px) {
-    .feedback form {
+    .feedback-form {
       grid-template-columns: 1fr;
       grid-template-areas: "name" "phone" "textaria" "button" "agreement";
       row-gap: 30px; } }
 
-.feedback__field--name {
+.feedback-form__field--name {
   grid-area: name; }
 
-.feedback__field--phone {
+.feedback-form__field--phone {
   grid-area: phone; }
 
-.feedback__field--text {
+.feedback-form__field--text {
   grid-area: textaria; }
 
-.feedback__field-checkbox {
+.feedback-form__field-checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   grid-area: agreement;
   padding-top: 8px;
   padding-left: 5px;
+  padding-right: 25px;
   font-size: 14px;
   line-height: 16px;
   cursor: pointer; }
 
-.feedback__field-checkbox:hover .feedback__checkbox-indicator {
+.feedback-form__field-checkbox:hover .feedback__checkbox-indicator {
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); }
 
-.feedback input:not([type="checkbox"]),
-.feedback textarea {
+.feedback-form input:not([type="checkbox"]),
+.feedback-form textarea {
   width: 100%;
   padding: 14px 17px;
   border: none;
@@ -1102,52 +1103,52 @@ body {
   line-height: 22px;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1); }
-  .feedback input:not([type="checkbox"])::-webkit-input-placeholder,
-  .feedback textarea::-webkit-input-placeholder {
+  .feedback-form input:not([type="checkbox"])::-webkit-input-placeholder,
+  .feedback-form textarea::-webkit-input-placeholder {
     color: #ffffff; }
-  .feedback input:not([type="checkbox"])::-moz-placeholder,
-  .feedback textarea::-moz-placeholder {
+  .feedback-form input:not([type="checkbox"])::-moz-placeholder,
+  .feedback-form textarea::-moz-placeholder {
     color: #ffffff; }
-  .feedback input:not([type="checkbox"]):-ms-input-placeholder,
-  .feedback textarea:-ms-input-placeholder {
+  .feedback-form input:not([type="checkbox"]):-ms-input-placeholder,
+  .feedback-form textarea:-ms-input-placeholder {
     color: #ffffff; }
-  .feedback input:not([type="checkbox"])::-ms-input-placeholder,
-  .feedback textarea::-ms-input-placeholder {
+  .feedback-form input:not([type="checkbox"])::-ms-input-placeholder,
+  .feedback-form textarea::-ms-input-placeholder {
     color: #ffffff; }
-  .feedback input:not([type="checkbox"])::placeholder,
-  .feedback textarea::placeholder {
+  .feedback-form input:not([type="checkbox"])::placeholder,
+  .feedback-form textarea::placeholder {
     color: #ffffff; }
-  .feedback input:not([type="checkbox"]):hover, .feedback input:not([type="checkbox"]):focus,
-  .feedback textarea:hover,
-  .feedback textarea:focus {
+  .feedback-form input:not([type="checkbox"]):hover, .feedback-form input:not([type="checkbox"]):focus,
+  .feedback-form textarea:hover,
+  .feedback-form textarea:focus {
     -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1); }
 
-.feedback__checkbox-indicator {
+.feedback-form__checkbox-indicator {
   display: block;
   margin-right: 16px;
   min-width: 16px;
   height: 16px;
   border: 1px solid #ffffff; }
 
-.feedback input[type="checkbox"]:focus + .feedback__checkbox-indicator {
+.feedback-form input[type="checkbox"]:focus + .feedback-form__checkbox-indicator {
   -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1); }
 
-.feedback input[type="checkbox"]:checked + .feedback__checkbox-indicator {
+.feedback-form input[type="checkbox"]:checked + .feedback-form__checkbox-indicator {
   background-image: url("../../img/icon-check.svg");
   background-repeat: no-repeat;
   background-position: 3px center; }
 
-.feedback textarea {
+.feedback-form textarea {
   min-height: 154px;
   resize: none; }
 
-.feedback__button {
+.feedback-form__button {
   grid-area: button;
   color: #ffffff;
   border-color: #ffffff; }
-  .feedback__button:hover, .feedback__button:focus {
+  .feedback-form__button:hover, .feedback-form__button:focus {
     border-color: #ffffff;
     opacity: 0.5; }
 
@@ -1457,3 +1458,68 @@ body {
   .copyright__reserved,
   .copyright__years {
     display: none; } }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .popup--opened {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.popup__wrapper {
+  position: relative;
+  max-width: 490px;
+  padding: 33px 40px 36px;
+  color: #ffffff;
+  background-color: #00b2ff; }
+
+.popup__wrapper form {
+  grid-template-columns: 1fr;
+  grid-template-areas: "name" "phone" "textaria" "button" "agreement";
+  row-gap: 30px; }
+
+.popup h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 39px; }
+
+.popup p {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 22px; }
+
+.popup textarea {
+  min-height: auto;
+  height: 104px; }
+
+.popup__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer; }
+  .popup__close:hover, .popup__close:focus {
+    opacity: 0.6; }
+  .popup__close:active {
+    opacity: 0.3; }
