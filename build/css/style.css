@@ -533,6 +533,9 @@ body {
   background-image: url("../../img/boards.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/main-bg.jpg");
   background-position: 85.4% 258px, 82.5% 80%, 66% 80%, center top;
   background-size: 705px 515px, 613px 486px, 326px 288px, cover; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .main-screen {
+      background-image: url("../../img/boards@2x.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/main-bg@2x.jpg"); } }
   @media (max-width: 1023px) {
     .main-screen {
       background-position: right -205px top 113px, right -170px top 82px, right 54px top 239px, center top;
@@ -1005,6 +1008,10 @@ body {
   background-image: url("../../img/paper-airplane.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/triangles.svg");
   background-repeat: no-repeat;
   background-position: calc(40% - 214px) 41.9%, 18.2% 50.6%, 12.3% 76.6%, 100% 35px; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .feedback {
+      background-image: url("../../img/paper-airplane@2x.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/triangles.svg");
+      background-size: 511px 288px, auto, auto, auto; } }
   @media (max-width: 1023px) {
     .feedback {
       background-image: none;

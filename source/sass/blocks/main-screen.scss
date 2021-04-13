@@ -7,8 +7,16 @@
   url("../../img/triangle-dots.svg"),
   url("../../img/triangle-dots-small.svg"),
   url("../../img/main-bg.jpg");
-  background-position: 85.4% 258px, 82.5% 80%, 66% 80%, center top,;
+  background-position: 85.4% 258px, 82.5% 80%, 66% 80%, center top;
   background-size: 705px 515px, 613px 486px, 326px 288px, cover;
+
+  @media (min-resolution: 2dppx) , (min-resolution: 144dpi) {
+    background-image:
+    url("../../img/boards@2x.png"),
+    url("../../img/triangle-dots.svg"),
+    url("../../img/triangle-dots-small.svg"),
+    url("../../img/main-bg@2x.jpg");
+  }
 
   @media (max-width: $tablet-width) {
     background-position: right -205px top 113px, right -170px top 82px, right 54px top 239px, center top;
