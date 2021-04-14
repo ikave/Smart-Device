@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: calc(40% - 214px) 41.9%, 18.2% 50.6%, 12.3% 76.6%, 100% 35px;
 
-  @media (min-resolution: 2dppx) , (min-resolution: 144dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
     background-image:
       url("../../img/paper-airplane@2x.png"),
       url("../../img/triangle-dots.svg"),
@@ -25,7 +25,6 @@
   @media (max-width: $tablet-width) {
     background-image: none;
     padding-top: 83px;
-    padding-bottom: 103px;
     padding-bottom: 104px;
   }
 
@@ -56,8 +55,7 @@
 }
 
 .feedback h2 {
-  margin: 0;
-  margin-bottom: 7px;
+  margin: 0 0 7px 0;
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
@@ -77,8 +75,7 @@
 }
 
 .feedback p {
-  margin: 0;
-  margin-bottom: 49px;
+  margin: 0 0 49px 0;
   font-size: 16px;
   line-height: 22px;
 

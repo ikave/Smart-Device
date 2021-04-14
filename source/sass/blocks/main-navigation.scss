@@ -8,14 +8,11 @@
 }
 
 .main-navigation__list {
-  margin: 0;
-  margin-right: 74px;
+  margin: 0 74px 0 0;
   padding: 0;
   list-style: none;
 
   &:last-child {
     margin-right: 0;
   }
-
-
 }

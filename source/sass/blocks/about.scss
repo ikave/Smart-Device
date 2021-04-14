@@ -47,8 +47,7 @@
 }
 
 .about h2 {
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 0 0 18px 0;
   font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
@@ -58,7 +57,7 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 24px;
     font-size: 32px;
-    line-height: 45px
+    line-height: 45px;
   }
 
   @media (max-width: $mobile-width) {
@@ -68,8 +67,7 @@
 }
 
 .about p {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
   font-size: 16px;
   line-height: 22px;
   color: $text;
@@ -110,6 +108,4 @@
       display: none;
     }
   }
-
-
 }

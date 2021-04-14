@@ -18,8 +18,7 @@
 }
 
 .hero h2 {
-  margin: 0;
-  margin-bottom: 26px;
+  margin: 0 0 26px 0;
   font-family: $secondary-font;
   font-size: 80px;
   font-weight: 700;
@@ -44,8 +43,7 @@
 .hero p {
   display: flex;
   max-width: 780px;
-  margin: 0;
-  margin-bottom: 44px;
+  margin: 0 0 44px 0;
   font-size: 22px;
   line-height: 34px;
 
@@ -135,7 +133,7 @@
 
 .hero__button-hide {
   @media (max-width: $mobile-width) {
-     display: none;
+    display: none;
   }
 }
 
