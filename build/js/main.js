@@ -32,7 +32,7 @@
     const mask = IMask(input, {
       mask: `+{7}(000)000-00-00`
     })
-  }
+  };
 
   const openPopup = () => {
     document.body.style.overflowY = 'hidden';
@@ -77,7 +77,7 @@
       evt.preventDefault();
       closePopup();
     }
-  }
+  };
 
   const setLocalStorageValues = () => {
     if (isStorageSupport) {
@@ -85,9 +85,7 @@
       localStorage.setItem('phone', popupPhone.value);
       localStorage.setItem('text', popupText.value);
     }
-  }
-
-
+  };
 
   for (let anchor of anchors) {
     anchor.addEventListener('click', (evt) => {
