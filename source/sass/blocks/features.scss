@@ -71,41 +71,41 @@
 
 .features__item--time {
   &::before {
-    background-image: url("../../img/icon-stopwatch.svg");
+    background-image: url("../img/icon-stopwatch.svg");
   }
 
   &:hover::before {
-    background-image: url("../../img/icon-stopwatch-hover.svg");
+    background-image: url("../img/icon-stopwatch-hover.svg");
   }
 }
 
 .features__item--provider {
   &::before {
-    background-image: url("../../img/icon-hired.svg");
+    background-image: url("../img/icon-hired.svg");
   }
 
   &:hover::before {
-    background-image: url("../../img/icon-hired-hover.svg");
+    background-image: url("../img/icon-hired-hover.svg");
   }
 }
 
 .features__item--confidentiality {
   &::before {
-    background-image: url("../../img/icon-detective.svg");
+    background-image: url("../img/icon-detective.svg");
   }
 
   &:hover::before {
-    background-image: url("../../img/icon-detective-hover.svg");
+    background-image: url("../img/icon-detective-hover.svg");
   }
 }
 
 .features__item--cost {
   &::before {
-    background-image: url("../../img/icon-tag.svg");
+    background-image: url("../img/icon-tag.svg");
   }
 
   &:hover::before {
-    background-image: url("../../img/icon-tag-hover.svg");
+    background-image: url("../img/icon-tag-hover.svg");
   }
 }
 

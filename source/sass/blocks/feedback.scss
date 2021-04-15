@@ -6,19 +6,19 @@
   color: $white;
   background-color: $accent;
   background-image:
-    url("../../img/paper-airplane.png"),
-    url("../../img/triangle-dots.svg"),
-    url("../../img/triangle-dots-small.svg"),
-    url("../../img/triangles.svg");
+    url("../img/paper-airplane.png"),
+    url("../img/triangle-dots.svg"),
+    url("../img/triangle-dots-small.svg"),
+    url("../img/triangles.svg");
   background-repeat: no-repeat;
   background-position: calc(40% - 214px) 41.9%, 18.2% 50.6%, 12.3% 76.6%, 100% 35px;
 
   @media (min-resolution: 2dppx), (min-resolution: 144dpi) {
     background-image:
-      url("../../img/paper-airplane@2x.png"),
-      url("../../img/triangle-dots.svg"),
-      url("../../img/triangle-dots-small.svg"),
-      url("../../img/triangles.svg");
+      url("../img/paper-airplane@2x.png"),
+      url("../img/triangle-dots.svg"),
+      url("../img/triangle-dots-small.svg"),
+      url("../img/triangles.svg");
     background-size: 511px 288px, auto, auto, auto;
   }
 

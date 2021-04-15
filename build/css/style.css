@@ -532,12 +532,12 @@ body {
   color: #ffffff;
   background-color: #1b2d37;
   background-repeat: no-repeat;
-  background-image: url("../../img/boards.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/main-bg.jpg");
+  background-image: url("../img/boards.png"), url("../img/triangle-dots.svg"), url("../img/triangle-dots-small.svg"), url("../img/main-bg.jpg");
   background-position: 85.4% 258px, 82.5% 80%, 66% 80%, center top;
   background-size: 705px 515px, 613px 486px, 326px 288px, cover; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
     .main-screen {
-      background-image: url("../../img/boards@2x.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/main-bg@2x.jpg"); } }
+      background-image: url("../img/boards@2x.png"), url("../img/triangle-dots.svg"), url("../img/triangle-dots-small.svg"), url("../img/main-bg@2x.jpg"); } }
   @media (max-width: 1023px) {
     .main-screen {
       background-position: right -205px top 113px, right -170px top 82px, right 54px top 239px, center top;
@@ -679,7 +679,7 @@ body {
 
 .background {
   padding-bottom: 99px;
-  background-image: url("../../img/background.svg");
+  background-image: url("../img/background.svg");
   background-repeat: no-repeat;
   background-position: 0 -29px; }
   @media (max-width: 1023px) {
@@ -752,28 +752,28 @@ body {
   color: #ffffff; }
 
 .features__item--time::before {
-  background-image: url("../../img/icon-stopwatch.svg"); }
+  background-image: url("../img/icon-stopwatch.svg"); }
 
 .features__item--time:hover::before {
-  background-image: url("../../img/icon-stopwatch-hover.svg"); }
+  background-image: url("../img/icon-stopwatch-hover.svg"); }
 
 .features__item--provider::before {
-  background-image: url("../../img/icon-hired.svg"); }
+  background-image: url("../img/icon-hired.svg"); }
 
 .features__item--provider:hover::before {
-  background-image: url("../../img/icon-hired-hover.svg"); }
+  background-image: url("../img/icon-hired-hover.svg"); }
 
 .features__item--confidentiality::before {
-  background-image: url("../../img/icon-detective.svg"); }
+  background-image: url("../img/icon-detective.svg"); }
 
 .features__item--confidentiality:hover::before {
-  background-image: url("../../img/icon-detective-hover.svg"); }
+  background-image: url("../img/icon-detective-hover.svg"); }
 
 .features__item--cost::before {
-  background-image: url("../../img/icon-tag.svg"); }
+  background-image: url("../img/icon-tag.svg"); }
 
 .features__item--cost:hover::before {
-  background-image: url("../../img/icon-tag-hover.svg"); }
+  background-image: url("../img/icon-tag-hover.svg"); }
 
 .features h3 {
   margin: 0 0 15px 0;
@@ -827,7 +827,7 @@ body {
           writing-mode: vertical-rl;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  background-image: url("../../img/board-bg.jpg");
+  background-image: url("../img/board-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -967,7 +967,7 @@ body {
     width: 63px;
     height: 63px;
     background-color: #00b2ff;
-    background-image: url("../../img/icon-arrow.svg");
+    background-image: url("../img/icon-arrow.svg");
     background-repeat: no-repeat;
     background-position: 30px center; }
   @media (max-width: 1023px) {
@@ -1002,12 +1002,12 @@ body {
   padding-bottom: 112px;
   color: #ffffff;
   background-color: #00b2ff;
-  background-image: url("../../img/paper-airplane.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/triangles.svg");
+  background-image: url("../img/paper-airplane.png"), url("../img/triangle-dots.svg"), url("../img/triangle-dots-small.svg"), url("../img/triangles.svg");
   background-repeat: no-repeat;
   background-position: calc(40% - 214px) 41.9%, 18.2% 50.6%, 12.3% 76.6%, 100% 35px; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
     .feedback {
-      background-image: url("../../img/paper-airplane@2x.png"), url("../../img/triangle-dots.svg"), url("../../img/triangle-dots-small.svg"), url("../../img/triangles.svg");
+      background-image: url("../img/paper-airplane@2x.png"), url("../img/triangle-dots.svg"), url("../img/triangle-dots-small.svg"), url("../img/triangles.svg");
       background-size: 511px 288px, auto, auto, auto; } }
   @media (max-width: 1023px) {
     .feedback {
@@ -1153,7 +1153,7 @@ body {
           box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.1); }
 
 .feedback-form input[type="checkbox"]:checked + .feedback-form__checkbox-indicator {
-  background-image: url("../../img/icon-check.svg");
+  background-image: url("../img/icon-check.svg");
   background-repeat: no-repeat;
   background-position: 3px center; }
 
@@ -1560,7 +1560,7 @@ body {
   height: 17px;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/icon-close.svg");
+  background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer; }
