@@ -352,7 +352,7 @@ body {
   min-height: 100vh;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
-  font-family: "PT Mono", monospace; }
+  font-family: "PT Mono", "Courier", monospace; }
 
 .visually-hidden {
   position: absolute;
@@ -398,8 +398,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   max-width: 1465px;
   width: 100%;
   margin: 0 auto;
@@ -413,6 +411,10 @@ body {
       padding: 17px 16px; } }
 
 .page-header__contacts {
+  width: 70%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-left: auto;
   margin-right: 50px; }
   @media (max-width: 1023px) {
@@ -420,6 +422,8 @@ body {
       margin-right: 0; } }
 
 .page-header__button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-top: 4px;
   border-color: #ffffff;
   color: #ffffff; }
@@ -431,13 +435,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   color: inherit;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease; }
-  .logo:hover, .logo:focus {
+  .logo[href]:hover, .logo[href]:focus {
     opacity: 0.6; }
-  .logo:active {
+  .logo[href]:active {
     opacity: 0.3; }
   @media (max-width: 1023px) {
     .logo--header {
@@ -565,7 +571,7 @@ body {
 
 .hero h2 {
   margin: 0 0 26px 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   font-weight: 700;
   line-height: 94px;
@@ -777,7 +783,7 @@ body {
 
 .features h3 {
   margin: 0 0 15px 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
@@ -818,7 +824,7 @@ body {
   text-align: right;
   margin-left: -20px;
   margin-right: 44px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 156px;
   font-weight: 700;
   line-height: 1;
@@ -845,7 +851,7 @@ body {
 
 .about h2 {
   margin: 0 0 18px 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 51px;
@@ -910,7 +916,7 @@ body {
 
 .services h2 {
   margin: 0 0 47px 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 51px; }
@@ -955,7 +961,7 @@ body {
   padding-top: 53px;
   padding-left: 44px;
   padding-right: 44px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff; }
@@ -1042,7 +1048,7 @@ body {
 
 .feedback h2 {
   margin: 0 0 7px 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 51px; }
@@ -1119,7 +1125,8 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0; }
   .feedback-form input:not([type="checkbox"])::-webkit-input-placeholder,
   .feedback-form textarea::-webkit-input-placeholder {
     color: #ffffff; }
@@ -1289,6 +1296,7 @@ body {
       padding-bottom: 45px; } }
 
 .page-footer__logo {
+  width: 216px;
   margin-bottom: 53px; }
   @media (max-width: 1023px) {
     .page-footer__logo {
@@ -1318,7 +1326,7 @@ body {
 
 .page-footer__header {
   margin: 0 0 24px 0;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
@@ -1439,10 +1447,14 @@ body {
       margin-left: auto; } }
 
 @media (max-width: 767px) {
+  .accordion .accordion__icon--plus {
+    display: block; }
+  .accordion .accordion__icon--minus {
+    display: none; }
   .accordion--opened .accordion__icon--plus {
     display: none; }
-  .accordion--closed .accordion__icon--minus {
-    display: none; } }
+  .accordion--opened .accordion__icon--minus {
+    display: block; } }
 
 .copyright {
   border-top: 1px solid rgba(98, 105, 98, 0.2); }

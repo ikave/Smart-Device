@@ -16,11 +16,20 @@
 }
 
 @media (max-width: $mobile-width) {
+  .accordion .accordion__icon--plus {
+    display: block;
+  }
+
+  .accordion .accordion__icon--minus {
+    display: none;
+  }
+
   .accordion--opened .accordion__icon--plus {
     display: none;
   }
 
-  .accordion--closed .accordion__icon--minus {
-    display: none;
+  .accordion--opened .accordion__icon--minus {
+    display: block;
   }
+
 }
