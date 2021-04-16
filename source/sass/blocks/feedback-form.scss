@@ -63,6 +63,7 @@
   line-height: 22px;
   color: $white;
   background-color: rgba($white, 0.1);
+  border-radius: 0;
 
   &::placeholder {
     color: $white;
