@@ -34,7 +34,8 @@
     })
   };
 
-  const openPopup = () => {
+  const openPopup = (evt) => {
+    evt.preventDefault();
     document.body.style.overflowY = 'hidden';
     popup.classList.add('popup--opened');
 

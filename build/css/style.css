@@ -1536,6 +1536,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .popup--page {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 100px 0; }
+
+.popup--page .popup__close {
+  display: none; }
 
 .popup__wrapper {
   position: relative;

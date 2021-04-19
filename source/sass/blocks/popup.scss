@@ -12,6 +12,18 @@
   &--opened {
     display: flex;
   }
+
+  &--page {
+    position: static;
+    display: flex;
+    background-color: $white;
+    height: 100%;
+    padding: 100px 0;
+  }
+}
+
+.popup--page .popup__close {
+  display: none;
 }
 
 .popup__wrapper {
